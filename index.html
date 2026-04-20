@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringotts Wizarding Bank | Secure Vault Access</title>
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark-marble: #1a1a1a;
+            --parchment: #f4f1ea;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            background-color: var(--dark-marble);
+            color: var(--parchment);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .vault-container {
+            border: 3px solid var(--gold);
+            padding: 40px;
+            background: linear-gradient(145deg, #222, #000);
+            box-shadow: 0 0 50px rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+            max-width: 500px;
+        }
+
+        .logo {
+            width: 120px;
+            filter: drop-shadow(0 0 10px var(--gold));
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .warning {
+            color: #ff4444;
+            font-weight: bold;
+            border-top: 1px solid var(--gold);
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--gold);
+            color: black;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: #f1c40f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="vault-container">
+        <img src="https://img.icons8.com/ios-filled/100/d4af37/dragon.png" alt="Gringotts Dragon" class="logo">
+        
+        <h1>Gringotts Bank</h1>
+        <p>"Fortius Quo Fidelius"</p>
+        
+        <div style="margin-bottom: 30px;">
+            <h2 style="color: white;">HELLO,</h2>
+            <p>This is the Head Goblin speaking.<br>
+            <strong>GIVE ME ALL YOUR MONEY</strong><br>
+            (Specifically your Galleons, Sickles, and Knuts).</p>
+        </div>
+
+        <a href="#" class="btn" onclick="alert('The Dragon is being released. Please stay still.')">DEPOSIT GOLD</a>
+
+        <div class="warning">
+            <p>Enter at your own risk. Gringotts is not responsible for loss of limbs or items left in the presence of a Horcrux.</p>
+        </div>
+    </div>
+
+</body>
+</html>
